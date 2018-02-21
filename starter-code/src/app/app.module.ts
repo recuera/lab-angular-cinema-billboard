@@ -5,15 +5,22 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { moviesService } from 'services/movies.service';
+import { HomeComponent } from './home/home.component';
+import { MoviesComponent } from './movies/movies.component';
+import { RouterModule } from '@angular/router';
+import { routes } from "./routes";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    MoviesComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [moviesService],
   bootstrap: [AppComponent]
