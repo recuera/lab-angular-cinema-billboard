@@ -1,4 +1,5 @@
 import { Injectable } from "@angular/core";
+import { sampleMovies } from "../sample-movies"
 
 export interface Movie {
   id:number,
@@ -15,7 +16,7 @@ export interface Movie {
 
 @Injectable()
 export class moviesService{
-  movies:Array<Movie>
+  movies:Array<Movie> = sampleMovies;
 
   getMovies(){
     return this.movies;
