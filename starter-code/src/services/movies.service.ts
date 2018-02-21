@@ -16,6 +16,7 @@ export interface Movie {
 
 @Injectable()
 export class moviesService{
+  
   movies:Array<Movie> = sampleMovies;
 
   getMovies(){
