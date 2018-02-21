@@ -23,10 +23,10 @@ export class moviesService{
     return this.movies;
   }
   getMovie(id){
-      for (let i = 0; i < this.movies.length; i++){
-        if(this.movies[i].id == id){
-          return this.movies[i];
-        }
+    for (let i = 0; i < this.movies.length; i++){
+      if(this.movies[i].id == id){
+        return this.movies[i];
+      }
     }
     console.log(`No movie found with id: ${id}`)
   }

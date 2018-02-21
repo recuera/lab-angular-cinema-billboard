@@ -1,3 +1,31 @@
-<h3>{{movie.title}}</h3>
+<img [src]="movie.poster" alt="">
 
-<a [routerLink]="['/home']"> Back </a>
+<div class="movie-data">
+  <h2>{{movie.title}}</h2>
+  <div>
+    <strong>Genres > </strong>
+    <span *ngFor="let g of movie.genres">{{g}} - </span>
+  </div>
+  <div>
+    <strong>Year > </strong>
+    <span>{{movie.year}}</span>
+  </div>
+  <div>
+    <strong>Director > </strong>
+    <span>{{movie.year}}</span>
+  </div>
+  <div>
+    <strong>Actors > </strong>
+    <span *ngFor="let a of movie.actors">{{a}} - </span>
+  </div>
+  <div>
+    <strong>Schedule > </strong>
+    <span *ngFor="let h of movie.hours">{{h}} - </span>
+  </div>
+  <div>
+    <strong>Synopsis > </strong>
+    <p>{{movie.synopsis}}</p>
+  </div>
+
+  <a [routerLink]="['/home']"> Back </a>
+</div>
