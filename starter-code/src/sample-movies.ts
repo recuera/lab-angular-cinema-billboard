@@ -25,7 +25,7 @@ export let sampleMovies = [
   }, {
     id: 2,
     title: "The Godfather",
-    poster: "https://i.imgur.com/Uzvny9I.jpg",
+    poster: "https://s-media-cache-ak0.pinimg.com/originals/b6/e4/49/b6e449bcce2c44b4024323db4a01817b.jpg",
     synopsis: "In late summer 1945, guests are gathered for the wedding reception of Don Vito Corleone's daughter Connie (Talia Shire) and Carlo Rizzi (Gianni Russo). Vito...",
     genres: [
       "Crime", "Drama"

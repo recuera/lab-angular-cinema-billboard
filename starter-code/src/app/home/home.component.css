@@ -1,0 +1,11 @@
+.movies-showcase{
+  width: 20%;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+  vertical-align: top;
+}
+.movies-showcase img{
+  width: 100%;
+}

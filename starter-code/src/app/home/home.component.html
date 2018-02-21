@@ -1,3 +1,7 @@
-<div *ngFor="let m of movies">
+<div *ngFor="let m of movies" class="movies-showcase">
+    <h4>Room {{m.room}}</h4>
+    <a (click)="goToMovie(m.id)">
+      <img [src]="m.poster" alt="">
+    </a>
     <p>{{m.title}}</p>
 </div>

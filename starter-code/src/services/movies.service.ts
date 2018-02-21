@@ -16,18 +16,18 @@ export interface Movie {
 
 @Injectable()
 export class moviesService{
-  
+
   movies:Array<Movie> = sampleMovies;
 
   getMovies(){
     return this.movies;
   }
   getMovie(id){
-    this.movies.forEach(m => {
-      if(m.id = id){
-        return m;
-      }
-    })
+      for (let i = 0; i < this.movies.length; i++){
+        if(this.movies[i].id == id){
+          return this.movies[i];
+        }
+    }
     console.log(`No movie found with id: ${id}`)
   }
 }
